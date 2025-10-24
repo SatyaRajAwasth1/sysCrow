@@ -1,0 +1,4 @@
+HDFS_v1/HDFS.log filter=lfs diff=lfs merge=lfs -text
+HDFS_v1/preprocessed/Event_traces.csv filter=lfs diff=lfs merge=lfs -text
+HDFS_v1/preprocessed/*.npz filter=lfs diff=lfs merge=lfs -text
+HDFS_v1/preprocessed/Event_occurrence_matrix.csv filter=lfs diff=lfs merge=lfs -text

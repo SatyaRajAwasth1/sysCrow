@@ -1,0 +1,16 @@
+confluent-kafka~=2.7.0
+pyyaml~=6.0.2
+drain3~=0.9.11
+#elasticsearch~=8.17.0
+mysql-connector-python~=9.1.0
+sqlalchemy~=2.0.37
+tqdm~=4.67.1
+pip~=24.3.1
+colorama~=0.4.6
+cachetools~=4.2.1
+jsonpickle~=1.5.1
+greenlet~=3.1.1
+typing_extensions~=4.12.2
+numpy~=2.2.3
+loguru~=0.7.3
+pandas~=2.2.0

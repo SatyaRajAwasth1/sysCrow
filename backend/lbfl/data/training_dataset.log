@@ -1,0 +1,8 @@
+2025-02-22 08:05:32.123 [main-thread] INFO [12345] com.example.app - User alice logged in.
+2025-02-22 08:05:33.456 [main-thread] INFO [12345] com.example.app - Session started for user alice.
+2025-02-22 08:05:34.789 [main-thread] ERROR [12345] com.example.app - Error occurred: Null pointer exception in user login.
+2025-02-22 08:05:35.123 [worker-thread] INFO [12345] com.example.app - Session ended for user alice.
+2025-02-22 08:06:15.567 [main-thread] WARN [12346] com.example.app - Missing user data for user bob during session initiation.
+2025-02-22 08:06:20.345 [worker-thread] INFO [12346] com.example.app - Session started for user bob.
+2025-02-22 08:06:45.901 [main-thread] INFO [12347] com.example.app - User charlie logged in.
+2025-02-22 08:07:00.234 [worker-thread] ERROR [12347] com.example.app - Unable to process request for user charlie due to invalid data format.

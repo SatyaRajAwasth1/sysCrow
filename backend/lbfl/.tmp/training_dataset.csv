@@ -1,0 +1,9 @@
+line_number,timestamp,thread,level,correlation_id,logger_name,template_id,properties
+1,2025-02-22 08:05:32.123,main-thread,INFO,12345,com.example.app,1,User alice logged in.
+2,2025-02-22 08:05:33.456,main-thread,INFO,12345,com.example.app,2,Session started for user alice.
+3,2025-02-22 08:05:34.789,main-thread,ERROR,12345,com.example.app,3,Error occurred: Null pointer exception in user login.
+4,2025-02-22 08:05:35.123,worker-thread,INFO,12345,com.example.app,2,Session <:*:> for user alice.
+5,2025-02-22 08:06:15.567,main-thread,WARN,12346,com.example.app,4,Missing user data for user bob during session initiation.
+6,2025-02-22 08:06:20.345,worker-thread,INFO,12346,com.example.app,2,Session <:*:> for user <:*:>
+7,2025-02-22 08:06:45.901,main-thread,INFO,12347,com.example.app,1,User <:*:> logged in.
+8,2025-02-22 08:07:00.234,worker-thread,ERROR,12347,com.example.app,5,Unable to process request for user charlie due to invalid data format.

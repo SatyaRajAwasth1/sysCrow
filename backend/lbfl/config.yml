@@ -1,0 +1,41 @@
+application:
+  mode: 'INFERENCE' # 'TRAINING'  # Change to 'INFERENCE' for inference mode;
+
+kafka:
+  state-persistence:
+    topic: 'drain3-state'
+    bootstrap_servers: '127.0.0.1:9091,127.0.0.1:9092,127.0.0.1:9093'
+
+  log-consumer:
+    bootstrap_servers: '127.0.0.1:9091,127.0.0.1:9092,127.0.0.1:9093'
+    auto_offset_reset: 'earliest'
+    enable_auto_commit: true
+    group_id: 'raw_log-consumers'
+#    training_mode_topic: 'raw-logs' #deprecated as training mode logs will be read from file
+    inference_mode_topic: 'raw_logs'
+
+template-miner:
+  drain3_config_url: 'drain3.ini'
+
+log-config:
+  ngram_tree_path: './.tmp/ngram_tree.pkl'
+  training_log_file: './data/training_dataset.log'
+  training_csv_file: './.tmp/training_dataset.csv'
+  training_segmented_sequence: './.tmp/training_data_segments.csv'
+
+persistence:
+  mysql:
+    url: 'root:root@localhost:3306/processed_logs'
+#  elasticsearch:
+#    indices:
+#      suspicious_sequences: 'suspicious-sequence'
+#      activities:
+#        log_details: 'log-details'
+#        templates: 'log-templates'
+#        properties: 'log-properties'
+#    connection:
+#      hosts:
+#        - 'http://localhost:9200'
+#      username: 'elastic'
+#      password: 'elastic'
+
